@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.apitesting.listeners.TestListener"></listener>
+    </listeners>
+    <test parallel="methods" thread-count="6" name="${user.dir}">
+        <classes>
+            <class name="com.apitesting.apirequests.GetRequestTests">
+                <methods>
+                    <include name="getClientsDetail" />
+                    <include name="getClientDetail" />
+                    <include name="postTestUsingPojo" />
+                </methods>
+            </class>
+
+            <class name="com.apitesting.apirequests.PostRequestTests">
+                <methods>
+                    <include name="postTestUsingPojo" />
+                    <include name="postRequestUsingJsonFile" />
+                </methods>
+            </class>
+
+            <class name="com.apitesting.apirequests.AuthTests">
+                <methods>
+                    <include name="basicAuthTestUsernamePassword" />
+                    <include name="basicAuthBase64Encode" />
+                    <include name="postOpenAI" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

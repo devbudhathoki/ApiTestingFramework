@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Sample API Testing Project</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Dec 24, 2023 03:49:16 PM</span></a>
+<a href="#"><span class="badge badge-primary">Dec 31, 2023 10:50:09 AM</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('author-view')">
+<a id="nav-author" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-user"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -66,13 +71,1167 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+<ul id="author-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">Steve</a><a class="dropdown-item" href="#">Smoke</a><a class="dropdown-item" href="#">Dev</a><a class="dropdown-item" href="#">Regression</a><a class="dropdown-item" href="#">Robert</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="5"
+          author="Dev Smoke"
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">postRequestUsingJsonFile</p>
+            <p class="text-sm">
+              <span>10:50:09 AM</span> / <span>00:00:01:623</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">postRequestUsingJsonFile</h5>
+<span class='badge badge-success'>12.31.2023 10:50:09 AM</span>
+<span class='badge badge-danger'>12.31.2023 10:50:11 AM</span>
+<span class='badge badge-default'>00:00:01:623</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Dev</span>
+<span class="badge badge-pill badge-default">Smoke</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:11 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-2'></div>
+ <script>
+  function jsonTreeCreate2() { 
+   document.getElementById('code-block-json-2').innerHTML = JSONTree.create({
+    "id": 5,
+    "name": "Adam",
+    "age": "21",
+    "address": {
+        "street": "2423 Chiswick Drive",
+        "city": "Chicago",
+        "state": "Illinois"
+    }
+}); 
+  }
+  jsonTreeCreate2();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:11 AM</td>
+        <td>
+          postRequestUsingJsonFile is passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author="Dev Regression Steve Robert Smoke"
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getClientDetail</p>
+            <p class="text-sm">
+              <span>10:50:09 AM</span> / <span>00:00:01:787</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getClientDetail</h5>
+<span class='badge badge-success'>12.31.2023 10:50:09 AM</span>
+<span class='badge badge-danger'>12.31.2023 10:50:11 AM</span>
+<span class='badge badge-default'>00:00:01:787</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Dev</span>
+<span class="badge badge-pill badge-default">Regression</span>
+<span class="badge badge-pill badge-default">Steve</span>
+<span class="badge badge-pill badge-default">Robert</span>
+<span class="badge badge-pill badge-default">Smoke</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:09 AM</td>
+        <td>
+          getClientDetail with Parameters [id, name]: [1, Dev] is passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:11 AM</td>
+        <td>
+          Parameters: 1 Dev
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:11 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-3'></div>
+ <script>
+  function jsonTreeCreate3() { 
+   document.getElementById('code-block-json-3').innerHTML = JSONTree.create([
+    {
+        "id": 1,
+        "name": "Dev",
+        "age": "30",
+        "address": {
+            "street": "700 Hampshire Dr",
+            "city": "Dallas",
+            "state": "TX"
+        }
+    },
+    {
+        "id": 2,
+        "name": "David",
+        "age": "30",
+        "address": {
+            "street": "700 Hampshire Dr",
+            "city": "Dallas",
+            "state": "TX"
+        }
+    },
+    {
+        "id": 3
+    },
+    {
+        "id": 4
+    },
+    {
+        "id": 921,
+        "name": "martin",
+        "age": "22",
+        "address": {
+            "street": "45752 Balistreri Creek",
+            "city": "Lake Elmiramouth",
+            "state": "Alabama"
+        }
+    },
+    {
+        "id": 922
+    },
+    {
+        "id": 923
+    },
+    {
+        "id": 676,
+        "name": "lawanna",
+        "age": "21",
+        "address": {
+            "street": "92368 Fahey Ferry",
+            "city": "Solborough",
+            "state": "Florida"
+        }
+    },
+    {
+        "id": 955,
+        "name": "aldo",
+        "age": "80",
+        "address": {
+            "street": "93823 Constance Fall",
+            "city": "Keelingville",
+            "state": "Arkansas"
+        }
+    },
+    {
+        "id": 146,
+        "name": "rolland",
+        "age": "20",
+        "address": {
+            "street": "7375 Schumm Rest",
+            "city": "Jerdeshire",
+            "state": "New Mexico"
+        }
+    },
+    {
+        "id": 715,
+        "name": "annett",
+        "age": "19",
+        "address": {
+            "street": "71082 Crona Mission",
+            "city": "East Martyshire",
+            "state": "Hawaii"
+        }
+    },
+    {
+        "id": 727,
+        "name": "ilse",
+        "age": "65",
+        "address": {
+            "street": "03109 Neville Motorway",
+            "city": "North Estrella",
+            "state": "Ohio"
+        }
+    },
+    {
+        "id": 296,
+        "name": "vertie",
+        "age": "35",
+        "address": {
+            "street": "96049 Yan Land",
+            "city": "Shandiburgh",
+            "state": "North Carolina"
+        }
+    },
+    {
+        "id": 861,
+        "name": "vaughn",
+        "age": "49",
+        "address": {
+            "street": "4678 Runte Overpass",
+            "city": "Monahanshire",
+            "state": "Kansas"
+        }
+    },
+    {
+        "id": 761,
+        "name": "buddy",
+        "age": "64",
+        "address": {
+            "street": "80019 Rempel Corner",
+            "city": "Lupechester",
+            "state": "Wisconsin"
+        }
+    },
+    {
+        "id": 644,
+        "name": "angele",
+        "age": "73",
+        "address": {
+            "street": "99574 Braun Burg",
+            "city": "Hanghaven",
+            "state": "Missouri"
+        }
+    },
+    {
+        "id": 940,
+        "name": "shelton",
+        "age": "56",
+        "address": {
+            "street": "4331 Metz Heights",
+            "city": "Bettyeberg",
+            "state": "Wisconsin"
+        }
+    },
+    {
+        "id": 58,
+        "name": "mignon",
+        "age": "31",
+        "address": {
+            "street": "177 Schuppe Plaza",
+            "city": "Lake Yongburgh",
+            "state": "Florida"
+        }
+    },
+    {
+        "id": 848,
+        "name": "noble",
+        "age": "74",
+        "address": {
+            "street": "460 Corrinne Loop",
+            "city": "West Marisa",
+            "state": "South Carolina"
+        }
+    },
+    {
+        "id": 735,
+        "name": "shanon",
+        "age": "38",
+        "address": {
+            "street": "71293 McCullough Circle",
+            "city": "Schinnermouth",
+            "state": "New Mexico"
+        }
+    },
+    {
+        "id": 860,
+        "name": "dorthea",
+        "age": "86",
+        "address": {
+            "street": "475 Ondricka Circles",
+            "city": "Stammville",
+            "state": "Arizona"
+        }
+    },
+    {
+        "id": 944,
+        "name": "angelena",
+        "age": "61",
+        "address": {
+            "street": "12908 Bayer Road",
+            "city": "East Ellismouth",
+            "state": "Illinois"
+        }
+    },
+    {
+        "id": 942,
+        "name": "oneida",
+        "age": "34",
+        "address": {
+            "street": "2610 Jonathon Oval",
+            "city": "Port Connie",
+            "state": "Iowa"
+        }
+    },
+    {
+        "id": 898,
+        "name": "wilbert",
+        "age": "38",
+        "address": {
+            "street": "30690 Shela Dale",
+            "city": "Marceloborough",
+            "state": "Minnesota"
+        }
+    },
+    {
+        "id": 330,
+        "name": "irving",
+        "age": "92",
+        "address": {
+            "street": "8133 Sean Squares",
+            "city": "Port Ranaeside",
+            "state": "Georgia"
+        }
+    },
+    {
+        "id": 574,
+        "name": "fausto",
+        "age": "45",
+        "address": {
+            "street": "8667 Cassin Ford",
+            "city": "Arnoldoburgh",
+            "state": "Kansas"
+        }
+    },
+    {
+        "id": 655,
+        "name": "michal",
+        "age": "44",
+        "address": {
+            "street": "8577 Jerrod Mountain",
+            "city": "East Kington",
+            "state": "New York"
+        }
+    },
+    {
+        "id": 795,
+        "name": "angelique",
+        "age": "20",
+        "address": {
+            "street": "4322 Brock Loaf",
+            "city": "Schimmelstad",
+            "state": "California"
+        }
+    },
+    {
+        "id": 678,
+        "name": "derrick",
+        "age": "97",
+        "address": {
+            "street": "94249 Sandy Extension",
+            "city": "East Rafaelfort",
+            "state": "Texas"
+        }
+    },
+    {
+        "id": 314,
+        "name": "ardelia",
+        "age": "48",
+        "address": {
+            "street": "10477 Ramiro Station",
+            "city": "Mylesland",
+            "state": "New Hampshire"
+        }
+    },
+    {
+        "id": 124,
+        "name": "morgan",
+        "age": "19",
+        "address": {
+            "street": "78410 Jimmie Plaza",
+            "city": "Luettgenport",
+            "state": "Ohio"
+        }
+    },
+    {
+        "id": 125,
+        "name": "flo",
+        "age": "59",
+        "address": {
+            "street": "28708 Trenton Hollow",
+            "city": "Earneststad",
+            "state": "South Dakota"
+        }
+    },
+    {
+        "id": 787,
+        "name": "jarvis",
+        "age": "87",
+        "address": {
+            "street": "672 Schmeler Mall",
+            "city": "Reneeshire",
+            "state": "Massachusetts"
+        }
+    },
+    {
+        "id": 390,
+        "name": "cornell",
+        "age": "59",
+        "address": {
+            "street": "1510 Mickey Island",
+            "city": "Darrylmouth",
+            "state": "Delaware"
+        }
+    },
+    {
+        "id": 381,
+        "name": "norbert",
+        "age": "40",
+        "address": {
+            "street": "9478 Davis Junctions",
+            "city": "Winfredfort",
+            "state": "Louisiana"
+        }
+    },
+    {
+        "id": 44,
+        "name": "chae",
+        "age": "71",
+        "address": {
+            "street": "5221 Powlowski Forks",
+            "city": "New Vincenzo",
+            "state": "Georgia"
+        }
+    },
+    {
+        "id": 956,
+        "name": "sharmaine",
+        "age": "28",
+        "address": {
+            "street": "2913 Eboni Junction",
+            "city": "East Jamaalchester",
+            "state": "Rhode Island"
+        }
+    },
+    {
+        "id": 322,
+        "name": "letisha",
+        "age": "70",
+        "address": {
+            "street": "85892 Hugo Shoals",
+            "city": "North Mohammedhaven",
+            "state": "Minnesota"
+        }
+    },
+    {
+        "id": 318,
+        "name": "remedios",
+        "age": "25",
+        "address": {
+            "street": "4883 Neil Groves",
+            "city": "East Blake",
+            "state": "Colorado"
+        }
+    },
+    {
+        "id": 500,
+        "name": "tonya",
+        "age": "44",
+        "address": {
+            "street": "7026 Erlinda Street",
+            "city": "North Tama",
+            "state": "Missouri"
+        }
+    },
+    {
+        "id": 180,
+        "name": "connie",
+        "age": "55",
+        "address": {
+            "street": "872 Blythe Divide",
+            "city": "West Arnoldoview",
+            "state": "Nebraska"
+        }
+    },
+    {
+        "id": 599,
+        "name": "delphine",
+        "age": "81",
+        "address": {
+            "street": "1129 Botsford Mountain",
+            "city": "Collenchester",
+            "state": "Louisiana"
+        }
+    },
+    {
+        "id": 875,
+        "name": "monique",
+        "age": "94",
+        "address": {
+            "street": "397 Parker River",
+            "city": "Thompsonville",
+            "state": "Pennsylvania"
+        }
+    },
+    {
+        "id": 714,
+        "name": "carmon",
+        "age": "31",
+        "address": {
+            "street": "65701 Simonis Flat",
+            "city": "Welchhaven",
+            "state": "West Virginia"
+        }
+    },
+    {
+        "id": 780,
+        "name": "gordon",
+        "age": "41",
+        "address": {
+            "street": "2948 Paige Neck",
+            "city": "Annelieseshire",
+            "state": "Iowa"
+        }
+    },
+    {
+        "id": 581,
+        "name": "yung",
+        "age": "23",
+        "address": {
+            "street": "20504 Prosacco Well",
+            "city": "Port Hienfort",
+            "state": "Nevada"
+        }
+    },
+    {
+        "id": 970,
+        "name": "joshua",
+        "age": "23",
+        "address": {
+            "street": "32216 Lorriane Ferry",
+            "city": "New Diann",
+            "state": "California"
+        }
+    },
+    {
+        "id": 73,
+        "name": "rosemarie",
+        "age": "83",
+        "address": {
+            "street": "1174 Daniel Mill",
+            "city": "East Wes",
+            "state": "New Mexico"
+        }
+    },
+    {
+        "id": 428,
+        "name": "gregorio",
+        "age": "39",
+        "address": {
+            "street": "461 Brown Plain",
+            "city": "Latanyafort",
+            "state": "Minnesota"
+        }
+    },
+    {
+        "id": 750,
+        "name": "chi",
+        "age": "51",
+        "address": {
+            "street": "07882 Collier Ford",
+            "city": "West Carrol",
+            "state": "Tennessee"
+        }
+    },
+    {
+        "id": 84,
+        "name": "alex",
+        "age": "63",
+        "address": {
+            "street": "157 India Mill",
+            "city": "Port Cecelia",
+            "state": "West Virginia"
+        }
+    },
+    {
+        "id": 487,
+        "name": "galen",
+        "age": "67",
+        "address": {
+            "street": "8430 Sha Cove",
+            "city": "South Bookerbury",
+            "state": "Delaware"
+        }
+    },
+    {
+        "id": 625,
+        "name": "kathern",
+        "age": "83",
+        "address": {
+            "street": "23669 Clair Pines",
+            "city": "North Kimiko",
+            "state": "Georgia"
+        }
+    },
+    {
+        "id": 448,
+        "name": "larhonda",
+        "age": "75",
+        "address": {
+            "street": "4601 Fletcher Squares",
+            "city": "South Spencer",
+            "state": "Montana"
+        }
+    },
+    {
+        "id": 547,
+        "name": "lawerence",
+        "age": "83",
+        "address": {
+            "street": "2915 Shields Overpass",
+            "city": "Tashinabury",
+            "state": "South Carolina"
+        }
+    },
+    {
+        "id": 564,
+        "name": "danial",
+        "age": "49",
+        "address": {
+            "street": "89254 Trey Points",
+            "city": "Strackefort",
+            "state": "Georgia"
+        }
+    },
+    {
+        "id": 632,
+        "name": "morton",
+        "age": "60",
+        "address": {
+            "street": "1844 Kautzer Way",
+            "city": "East Mattie",
+            "state": "New York"
+        }
+    },
+    {
+        "id": 223,
+        "name": "giselle",
+        "age": "71",
+        "address": {
+            "street": "28237 Kreiger Common",
+            "city": "Port Stacia",
+            "state": "Colorado"
+        }
+    },
+    {
+        "id": 911,
+        "name": "leon",
+        "age": "43",
+        "address": {
+            "street": "48035 Rowe Lane",
+            "city": "West Desmondside",
+            "state": "Georgia"
+        }
+    },
+    {
+        "id": 912,
+        "name": "paulina",
+        "age": "64",
+        "address": {
+            "street": "375 Jolyn Ridges",
+            "city": "Rodgerview",
+            "state": "West Virginia"
+        }
+    },
+    {
+        "id": 356,
+        "name": "trina",
+        "age": "98",
+        "address": {
+            "street": "353 Boehm Road",
+            "city": "Lake Valentintown",
+            "state": "Florida"
+        }
+    },
+    {
+        "id": 894,
+        "name": "belen",
+        "age": "23",
+        "address": {
+            "street": "02775 Fay Isle",
+            "city": "Reyesbury",
+            "state": "Pennsylvania"
+        }
+    },
+    {
+        "id": 717,
+        "name": "zachariah",
+        "age": "99",
+        "address": {
+            "street": "445 Kling Well",
+            "city": "Lake Tracy",
+            "state": "West Virginia"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Adam",
+        "age": "21",
+        "address": {
+            "street": "2423 Chiswick Drive",
+            "city": "Chicago",
+            "state": "Illinois"
+        }
+    },
+    {
+        "id": 548,
+        "name": "cary",
+        "age": "93",
+        "address": {
+            "street": "10671 Jones Club",
+            "city": "Lake Heribertoview",
+            "state": "Kansas"
+        }
+    }
+]); 
+  }
+  jsonTreeCreate3();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:11 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create({
+    "id": 1,
+    "name": "Dev",
+    "age": "30",
+    "address": {
+        "street": "700 Hampshire Dr",
+        "city": "Dallas",
+        "state": "TX"
+    }
+}); 
+  }
+  jsonTreeCreate0();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:11 AM</td>
+        <td>
+          getClientDetail is passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:11 AM</td>
+        <td>
+          getClientsDetail is passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author="Dev Smoke"
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">postTestUsingPojo</p>
+            <p class="text-sm">
+              <span>10:50:09 AM</span> / <span>00:00:01:623</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">postTestUsingPojo</h5>
+<span class='badge badge-success'>12.31.2023 10:50:09 AM</span>
+<span class='badge badge-danger'>12.31.2023 10:50:11 AM</span>
+<span class='badge badge-default'>00:00:01:623</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Dev</span>
+<span class="badge badge-pill badge-default">Smoke</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:11 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-1'></div>
+ <script>
+  function jsonTreeCreate1() { 
+   document.getElementById('code-block-json-1').innerHTML = JSONTree.create({
+    "id": 548,
+    "name": "cary",
+    "age": "93",
+    "address": {
+        "street": "10671 Jones Club",
+        "city": "Lake Heribertoview",
+        "state": "Kansas"
+    }
+}); 
+  }
+  jsonTreeCreate1();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:11 AM</td>
+        <td>
+          postTestUsingPojo is passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author="Dev Smoke"
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">basicAuthBase64Encode</p>
+            <p class="text-sm">
+              <span>10:50:09 AM</span> / <span>00:00:01:852</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">basicAuthBase64Encode</h5>
+<span class='badge badge-success'>12.31.2023 10:50:09 AM</span>
+<span class='badge badge-danger'>12.31.2023 10:50:11 AM</span>
+<span class='badge badge-default'>00:00:01:852</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Dev</span>
+<span class="badge badge-pill badge-default">Smoke</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:11 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-5'></div>
+ <script>
+  function jsonTreeCreate5() { 
+   document.getElementById('code-block-json-5').innerHTML = JSONTree.create({
+    "authenticated": true
+}); 
+  }
+  jsonTreeCreate5();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:11 AM</td>
+        <td>
+          basicAuthBase64Encode is passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author="Dev Smoke"
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">basicAuthTestUsernamePassword</p>
+            <p class="text-sm">
+              <span>10:50:09 AM</span> / <span>00:00:01:907</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">basicAuthTestUsernamePassword</h5>
+<span class='badge badge-success'>12.31.2023 10:50:09 AM</span>
+<span class='badge badge-danger'>12.31.2023 10:50:11 AM</span>
+<span class='badge badge-default'>00:00:01:907</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Dev</span>
+<span class="badge badge-pill badge-default">Smoke</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:11 AM</td>
+        <td>
+          basicAuthTestUsernamePassword is passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getClientsDetail</p>
+            <p class="text-sm">
+              <span>10:50:09 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getClientsDetail</h5>
+<span class='badge badge-success'>12.31.2023 10:50:09 AM</span>
+<span class='badge badge-danger'>12.31.2023 10:50:09 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author="Dev Smoke"
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">postOpenAI</p>
+            <p class="text-sm">
+              <span>10:50:11 AM</span> / <span>00:00:00:714</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">postOpenAI</h5>
+<span class='badge badge-success'>12.31.2023 10:50:11 AM</span>
+<span class='badge badge-danger'>12.31.2023 10:50:12 AM</span>
+<span class='badge badge-default'>00:00:00:714</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Dev</span>
+<span class="badge badge-pill badge-default">Smoke</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:12 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-6'></div>
+ <script>
+  function jsonTreeCreate6() { 
+   document.getElementById('code-block-json-6').innerHTML = JSONTree.create({
+    "id": "chatcmpl-8btIpa5E5eGYRXWCqRU0k8b2g9d16",
+    "object": "chat.completion",
+    "created": 1704041411,
+    "model": "gpt-3.5-turbo-0613",
+    "choices": [
+        {
+            "index": 0,
+            "message": {
+                "role": "assistant",
+                "content": "Hello! How can I assist you today?"
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 19,
+        "completion_tokens": 9,
+        "total_tokens": 28
+    },
+    "system_fingerprint": null
+}); 
+  }
+  jsonTreeCreate6();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:12 AM</td>
+        <td>
+          postOpenAI is passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author="Regression Steve"
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getClientDetail</p>
+            <p class="text-sm">
+              <span>10:50:11 AM</span> / <span>00:00:00:024</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getClientDetail</h5>
+<span class='badge badge-success'>12.31.2023 10:50:11 AM</span>
+<span class='badge badge-danger'>12.31.2023 10:50:11 AM</span>
+<span class='badge badge-default'>00:00:00:024</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Regression</span>
+<span class="badge badge-pill badge-default">Steve</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:11 AM</td>
+        <td>
+          getClientDetail with Parameters [id, name]: [2, David] is passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:50:11 AM</td>
+        <td>
+          Parameters: 2 David
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:11 AM</td>
+        <td>
+           <div class='json-tree' id='code-block-json-4'></div>
+ <script>
+  function jsonTreeCreate4() { 
+   document.getElementById('code-block-json-4').innerHTML = JSONTree.create({
+    "id": 2,
+    "name": "David",
+    "age": "30",
+    "address": {
+        "street": "700 Hampshire Dr",
+        "city": "Dallas",
+        "state": "TX"
+    }
+}); 
+  }
+  jsonTreeCreate4();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:50:11 AM</td>
+        <td>
+          getClientDetail is passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
       </ul>
     </div>
   </div>
@@ -82,24 +1241,289 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="container-fluid p-4 view dashboard-view">
+<div class="test-wrapper row view author-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Author</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">5</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">Steve</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Steve</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:50:09 AM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>getClientDetail</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:50:11 AM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>getClientDetail</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">Smoke</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Smoke</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:50:09 AM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>postTestUsingPojo</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:50:09 AM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>postRequestUsingJsonFile</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:50:09 AM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>getClientDetail</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:50:09 AM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>basicAuthBase64Encode</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:50:09 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>basicAuthTestUsernamePassword</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:50:11 AM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>postOpenAI</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">Dev</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Dev</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:50:09 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>basicAuthTestUsernamePassword</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:50:09 AM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>postRequestUsingJsonFile</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:50:09 AM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>postTestUsingPojo</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:50:09 AM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>basicAuthBase64Encode</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:50:09 AM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>getClientDetail</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:50:11 AM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>postOpenAI</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">Regression</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Regression</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:50:09 AM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>getClientDetail</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:50:11 AM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>getClientDetail</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Robert</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Robert</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:50:09 AM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>getClientDetail</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Dec 24, 2023 03:49:16 PM</h3>
+<h3>Dec 31, 2023 10:50:09 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Dec 24, 2023 03:49:18 PM</h3>
+<h3>Dec 31, 2023 10:50:12 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>0</h3>
+<h3>8</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -121,13 +1545,33 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> tests passed
+<div><small data-tooltip='100%'>
+<b>8</b> tests passed
 </small>
 </div>
 <div>
 <small data-tooltip='0%'><b>0</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='89%'><b>17</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>2</b> others
 </small>
 </div>
 </div>
@@ -143,15 +1587,66 @@
 </div></div>
 <script>
 var timeline = {
+"postRequestUsingJsonFile":1.623,"getClientDetail":1.787,"postTestUsingPojo":1.623,"basicAuthBase64Encode":1.852,"basicAuthTestUsernamePassword":1.907,"getClientsDetail":0,"postOpenAI":0.714,"getClientDetail":0.024
 };
 </script>
 <div class="row">
+<div class="col-lg-6 col-md-12 author-container">
+<div class="card">
+<div class="card-header"><p>Author</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
+<tbody>
+<tr>
+<td>Steve</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Smoke</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Dev</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Regression</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Robert</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
 </div>
 </div>
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
+passParent: 8,
 failParent: 0,
 warningParent: 0,
 skipParent: 0,
@@ -168,11 +1663,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 0,
+passEvents: 17,
 failEvents: 0,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 0
+infoEvents: 2
 };
 </script>        </div>
       </div>

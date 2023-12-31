@@ -1,0 +1,7 @@
+FROM maven:3.9.6-eclipse-temurin-21-jammy
+RUN apt-get update && apt-get install -y libxrender1 libxext6 libxtst6 libxi6 xvfb
+COPY src /home/apiframework/src
+COPY pom.xml /home/apiframework/pom.xml
+COPY testng.xml /home/apiframework/testng.xml
+WORKDIR /home/apiframework
+ENTRYPOINT ["mvn", "clean", "test"]

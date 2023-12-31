@@ -1,13 +1,14 @@
 package com.apitesting.factory;
 
-import com.apitesting.config.FrameworkConfiguration;
+import com.apitesting.config.APIFrameworkConfig;
 import org.aeonbits.owner.ConfigCache;
+import org.aeonbits.owner.ConfigFactory;
 
-public final class ConfigFactory {
+public final class APIConfigFactory {
 
-    private ConfigFactory(){}
+    private APIConfigFactory(){}
 
-    public static FrameworkConfiguration getConfig(){
-        return ConfigCache.getOrCreate(FrameworkConfiguration.class);
+    public static APIFrameworkConfig getConfig(){
+        return ConfigCache.getOrCreate(APIFrameworkConfig.class);
     }
 }

@@ -1,11 +1,10 @@
-Error: Insert failed, duplicate id
-    at Function.insert (/usr/local/lib/node_modules/json-server/node_modules/lodash-id/src/index.js:49:18)
-    at /usr/local/lib/node_modules/json-server/node_modules/lodash/lodash.js:4430:28
-    at arrayReduce (/usr/local/lib/node_modules/json-server/node_modules/lodash/lodash.js:697:21)
-    at baseWrapperValue (/usr/local/lib/node_modules/json-server/node_modules/lodash/lodash.js:4429:14)
-    at LodashWrapper.wrapperValue (/usr/local/lib/node_modules/json-server/node_modules/lodash/lodash.js:9114:14)
-    at create (/usr/local/lib/node_modules/json-server/lib/server/router/plural.js:216:48)
-    at Layer.handle [as handle_request] (/usr/local/lib/node_modules/json-server/node_modules/express/lib/router/layer.js:95:5)
-    at next (/usr/local/lib/node_modules/json-server/node_modules/express/lib/router/route.js:144:13)
-    at next (/usr/local/lib/node_modules/json-server/node_modules/express/lib/router/route.js:140:7)
-    at Route.dispatch (/usr/local/lib/node_modules/json-server/node_modules/express/lib/router/route.js:114:3)
+{
+  "id": 5,
+  "name": "Adam",
+  "age": "21",
+  "address": {
+    "street": "2423 Chiswick Drive",
+    "city": "Chicago",
+    "state": "Illinois"
+  }
+}

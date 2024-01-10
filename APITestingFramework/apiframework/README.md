@@ -51,9 +51,9 @@ docker run -v /tmp/openai:/tmp/openai --name apitest devbudhathoki05/apitestimag
 docker cp apitest:/home/apiframework .
 ```
 
-
-
-
+## removing docker constainers and images
+``` 
 containers=$(docker container ls -a | grep api* | awk '{print $1}' | tr '\n' ' ') && docker container stop $containers && docker container rm $containers
 
 images=$(docker images | grep api* | awk '{print $3}'|   tr '\n' ' ') && docker image rmi -f $images
+```

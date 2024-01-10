@@ -60,6 +60,7 @@ public class PostRequestTests {
         RequestSpecification requestSpecification = RequestBuilder.buildRequestForPostCalls().body(jsonString);
         Response response = requestSpecification.post("/clients");
         System.out.println(jsonObject.get("id"));
+
         if(response.getStatusCode() != 201){
             RequestBuilder.buildRequestForPostCalls().pathParams("id",jsonObject.get("id").getAsInt()).delete("/clients/{id}");
             response = requestSpecification.post("/clients");

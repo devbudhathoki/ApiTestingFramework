@@ -17,7 +17,7 @@ http://192.168.1.90:4000/clients
 * Create /tmp/openai file with OPENAI_API_KEY as follows:
 ```
 cat /tmp/openai
-openAIKey=sk-xI2dsdrtdsds3NrT3BlbdrFzmA5YzO5LLIha6bWu
+openAIKey=sk-xI2dsdrxxxxxxdsaradasx
 ```
 
 #### Run Test from project root where pom.xml file is present
